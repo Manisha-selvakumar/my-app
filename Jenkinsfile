@@ -37,5 +37,5 @@ node{
    stage('Docker deployment'){
    sh 'docker run -d -p 8090:8080 --name tomcattest manishaselvakumar/myweb:0.0.2' 
    }
-}
+   }
 }
