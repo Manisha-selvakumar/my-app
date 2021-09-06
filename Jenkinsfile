@@ -1,6 +1,6 @@
 node{
    stage('SCM Checkout'){
-     git 'https://github.com/damodaranj/my-app.git'
+     git 'https://github.com/Manisha-selvakumar/my-app.git'
    }
    stage('Compile-Package'){
 
@@ -35,7 +35,7 @@ node{
 		//  do nothing if there is an exception
 	}
    stage('Docker deployment'){
-   sh 'docker run -d -p 8090:8080 --name tomcattest saidamo/myweb:0.0.2' 
+   sh 'docker run -d -p 8090:8080 --name tomcattest manishaselvakumar/myweb:0.0.2' 
    }
 }
 }
